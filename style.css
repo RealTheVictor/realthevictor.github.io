@@ -1,0 +1,152 @@
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-button {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+
+.centered-objects {
+    height: 65vh;
+    display: flex;
+    place-items: center;
+}
+
+.container2 {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+  .text {
+    font-size: 1em;
+    letter-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 78ch;
+    animation: typing 8.2s steps(78), invisible 19s steps(100), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: white;
+    opacity: 0;
+  }
+
+  .text2 {
+    font-size: 3em;
+    letter-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 9ch;
+    color: white;
+    opacity: 0;
+    animation-name: thevictoranim;
+    animation-duration: 5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+  }
+
+  .btn,input[type=submit] {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 0px;
+    line-height: 38px;
+    margin: .5em;
+    padding: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.btn:hover,input[type=submit]:hover {
+    transition: filter .2s ease;
+    -webkit-transition: filter .2s ease;
+    -ms-transition: filter .2s ease;
+    -moz-transition: filter .2s ease;
+    -o-transition: filter .2s ease;
+    color: #fff;
+    filter: brightness(65%)
+}
+
+.btn {
+    opacity: 0;
+    animation-name: thevictoranim;
+    animation-duration: 5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+
+.video-container video {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  width: 100vw;
+  min-width: 178.704vh;
+  height: 100vh;
+  min-height: 55.959vw
+}
+
+video {
+    z-index: -5;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    opacity: 0;
+    animation-name: thevictoranim;
+    animation-duration: 5s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+
+.box-container {
+  border-radius: 10px;
+  margin-bottom: 2.5em;
+  padding: 1em;
+  position: relative
+}
+
+  @keyframes typing {
+    from {
+        width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+        border-color: transparent
+    }
+  }
+
+  @keyframes invisible {
+    from {
+        opacity: 100;
+    }
+  }
+
+  @keyframes thevictoranim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+  }
