@@ -14,46 +14,76 @@
   visibility: hidden;
 }
 
+html {
+  height: --webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 1.2rem;
+  overflow: hidden;
+  height: 100%;
+}
+
 .centered-objects {
-    height: 65vh;
-    display: flex;
-    place-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .container2 {
-    height: 60vh;
+    height: 57vh;
     display: grid;
     place-items: center;
 }
 
-  .text {
-    font-size: 1em;
+  .lyrics {
     letter-spacing: 5px;
     font-family: 'Courier New', Courier, monospace;
-    width: 78ch;
-    animation: typing 8.2s steps(78), invisible 19s steps(100), blink .5s step-end infinite alternate;
+    width: 74ch;
+    animation: typing 8.2s steps(74), invisible 19s steps(100), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     color: white;
     opacity: 0;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
   }
   
-  h4 {
-    font-size: 1em;
+  .text {
     letter-spacing: 5px;
     font-family: 'Courier New', Courier, monospace;
-    width: 88ch;
-    animation: typing 4s steps(88), invisible 19s steps(100), blink .5s step-end infinite alternate;
+    font-size: 0.9em;
+    width: 83ch;
+    animation: typing 4s steps(83), invisible 19s steps(100), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     color: white;
     opacity: 0;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
   }
 
   .text2 {
-    font-size: 5em;
+    display: grid;
+    font-size: 4.5em;
     letter-spacing: 5px;
     font-family: 'Courier New', Courier, monospace;
     width: 9ch;
@@ -88,6 +118,27 @@
     white-space: nowrap
 }
 
+.btn1,input[type=submit] {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: .5em;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap
+}
+
 .btn:hover,input[type=submit]:hover {
     transition: filter .2s ease;
     -webkit-transition: filter .2s ease;
@@ -98,7 +149,18 @@
     filter: brightness(65%)
 }
 
+.btn1:hover,input[type=submit]:hover {
+  transition: filter .2s ease;
+  -webkit-transition: filter .2s ease;
+  -ms-transition: filter .2s ease;
+  -moz-transition: filter .2s ease;
+  -o-transition: filter .2s ease;
+  color: #fff;
+  filter: brightness(65%)
+}
+
 .btn {
+    display: grid;
     opacity: 0;
     animation-name: thevictoranim;
     animation-duration: 5s;
@@ -106,35 +168,25 @@
     animation-fill-mode: forwards;
 }
 
-.video-container video {
-  display: block;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-30%);
-  width: 100vw;
-  min-width: 178.704vh;
-  height: 100vh;
-  min-height: 55.959vw
-}
-
-video {
-    z-index: -5;
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    opacity: 0;
-    animation-name: thevictoranim;
-    animation-duration: 5s;
-    animation-delay: 20s;
-    animation-fill-mode: forwards;
+.background {
+  z-index: -5;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  opacity: 0;
+  animation-name: thevictoranim;
+  animation-duration: 5s;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
 }
 
 .box-container {
   border-radius: 10px;
   margin-bottom: 2.5em;
-  padding: 1em;
-  position: relative
+  padding: 1vh;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
 }
 
   @keyframes typing {
