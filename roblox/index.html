@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>TheVictor</title>
+    <meta content="TheVictor's Website lol" property="og:title" />
+    <meta content="idrk what to put here lmao hi i guess" property="og:description" />
+    <meta content="https://realthevictor.github.io" property="og:url" />
+    <meta content="https://realthevictor.github.io/Images/pfp.png" property="og:image" />
+    <meta content="#000000" data-react-helmet="true" name="theme-color" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-objects">
+        <div class="container">
+            <p class="lyrics">Stay with me... 真夜中のドアをたたき.... 帰らないでと泣いた...</p>
+        </div>
+        <div class="container2">
+            <p class="text2" style="position: absolute; top: 23%; left: 50%; transform: translate(-44%, 50%); vertical-align: right; z-index: 1;">TheVictor</p>
+            <div class="box-container" style="position: absolute; top: 45%; left: 50%; transform: translate(-44%, 50%); vertical-align: right; z-index: 1;">
+                <a id="bar1" href="https://roblox.com/users/1581179193/profile" class="btn" style="color: rgb(200,200,200); padding: 0px 0.4em; display: initial;" target="_blank">ROBLOX</a>
+                <a id="bar2" href="https://youtube.com/@realthevictor" class="btn" style="color: rgb(200,200,200); padding: 0px 0.4em; display: initial;" target="_blank">YouTube</a>
+                <!--<a id="bar3" href="/vape" class="btn" style="color: rgb(200,200,200); padding: 0px 0.4em; display: initial;" target="_blank">Overlay</a>-->
+                <a id="bar4" href="https://discord.com/users/737657978940948533" class="btn" style="color: rgb(200,200,200); padding: 0px 0.4em; display: initial;" target="_blank">Discord</a>
+                <a id="bar5" href="https://vrchat.com/home/user/usr_8b4441a8-ecf8-4793-8abf-63597604ebea" class="btn" style="color: rgb(200,200,200); padding: 0px 0.4em; display: initial;" target="_blank">VRChat</a>
+            </div>
+        </div>
+        <div id="tsparticles" class="background">
+            <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+
+            <script type="text/javascript">
+                tsParticles.load("tsparticles", {
+                    particles: {
+                        move: {
+                            enable: true, // this makes particles move
+                            speed: { min: 1, max: 3 }, // this is the speed of the particles
+                        },
+                        opacity: {
+                            value: 0.7, // this sets the opacity of the particles
+                        },
+                        size: {
+                            value: { min: 1, max: 3 }, // this sets the size of the particles
+                        },
+                    },
+                });
+            </script>
+        </div>
+    </div>
+    <a id="bar6" href="/skip" class="btn1" style="color: rgb(200,200,200); padding: 0px 0.4em; display: flex;" target="_self">no music</a>
+    <audio id="sound" autoplay loop preload="auto">
+        <source src="/Audio/Clean.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        let music = document.getElementById("sound");
+        music.volume = 0.5;
+    </script>
+</body>
+</html>

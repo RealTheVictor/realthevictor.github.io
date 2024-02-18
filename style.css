@@ -28,6 +28,22 @@ body {
   height: 100%;
 }
 
+.lyrics {
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  width: 75ch;
+  animation: typing 10s steps(77), invisible 19s steps(100), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  color: white;
+  opacity: 0;
+  line-height: 1.2;
+  margin: 20px 20px 20px 20px;
+}
+
+
 .centered-objects {
   align-items: center;
   display: flex;
@@ -40,46 +56,11 @@ body {
   width: 100%;
 }
 
-.container {
-  padding: 20px;
-  font-size: 1.2rem;
-  color: white;
-}
-
 .container2 {
-    height: 57vh;
+    height: 80vh;
     display: grid;
     place-items: center;
 }
-
-  .lyrics {
-    letter-spacing: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 74ch;
-    animation: typing 8.2s steps(74), invisible 19s steps(100), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    color: white;
-    opacity: 0;
-    line-height: 1.2;
-    margin: 0 0 20px 0;
-  }
-  
-  .text {
-    letter-spacing: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
-    width: 83ch;
-    animation: typing 4s steps(83), invisible 19s steps(100), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    color: white;
-    opacity: 0;
-    line-height: 1.2;
-    margin: 0 0 20px 0;
-  }
 
   .text2 {
     display: grid;
@@ -91,7 +72,7 @@ body {
     opacity: 0;
     animation-name: thevictoranim;
     animation-duration: 5s;
-    animation-delay: 20s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
   }
 
@@ -164,7 +145,7 @@ body {
     opacity: 0;
     animation-name: thevictoranim;
     animation-duration: 5s;
-    animation-delay: 20s;
+    animation-delay: .5s;
     animation-fill-mode: forwards;
 }
 
@@ -176,7 +157,7 @@ body {
   opacity: 0;
   animation-name: thevictoranim;
   animation-duration: 5s;
-  animation-delay: 20s;
+  animation-delay: .5s;
   animation-fill-mode: forwards;
 }
 

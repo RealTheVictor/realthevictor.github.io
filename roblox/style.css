@@ -1,0 +1,198 @@
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-button {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+
+html {
+  height: --webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  margin: 0;
+  font-size: 1.2rem;
+  overflow: hidden;
+  height: 100%;
+}
+
+.lyrics {
+  letter-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  width: 75ch;
+  animation: typing 10s steps(77), invisible 19s steps(100), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  color: white;
+  opacity: 0;
+  line-height: 1.2;
+  margin: 20px 20px 20px 20px;
+}
+
+
+.centered-objects {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container2 {
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+  .text2 {
+    display: grid;
+    font-size: 4.5em;
+    letter-spacing: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 9ch;
+    color: white;
+    opacity: 0;
+    animation-name: thevictoranim;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+  }
+
+  .btn,input[type=submit] {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    height: 0px;
+    line-height: 38px;
+    margin: .5em;
+    padding: 0 30px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.btn1,input[type=submit] {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin: .5em;
+  padding: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap
+}
+
+.btn:hover,input[type=submit]:hover {
+    transition: filter .2s ease;
+    -webkit-transition: filter .2s ease;
+    -ms-transition: filter .2s ease;
+    -moz-transition: filter .2s ease;
+    -o-transition: filter .2s ease;
+    color: #fff;
+    filter: brightness(65%)
+}
+
+.btn1:hover,input[type=submit]:hover {
+  transition: filter .2s ease;
+  -webkit-transition: filter .2s ease;
+  -ms-transition: filter .2s ease;
+  -moz-transition: filter .2s ease;
+  -o-transition: filter .2s ease;
+  color: #fff;
+  filter: brightness(65%)
+}
+
+.btn {
+    display: grid;
+    opacity: 0;
+    animation-name: thevictoranim;
+    animation-duration: 5s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.background {
+  z-index: -5;
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  opacity: 0;
+  animation-name: thevictoranim;
+  animation-duration: 5s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+.box-container {
+  border-radius: 10px;
+  margin-bottom: 2.5em;
+  padding: 1vh;
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto auto; /*auto*/
+}
+
+  @keyframes typing {
+    from {
+        width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+        border-color: transparent
+    }
+  }
+
+  @keyframes invisible {
+    from {
+        opacity: 100;
+    }
+  }
+
+  @keyframes thevictoranim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+  }
